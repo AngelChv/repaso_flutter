@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:repaso_flutter/data/conversion_service.dart';
+import 'package:repaso_flutter/domain/conversion.dart';
 import 'package:repaso_flutter/presentation/view_models/language_view_model.dart';
 import 'package:repaso_flutter/presentation/view_models/theme_view_model.dart';
 import 'package:repaso_flutter/presentation/views/converter.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() {
+  ConversionService.insert(Conversion.convert(10, "KM", "KM"));
+  ConversionService.getAll().then((list) => list.forEach(print.call));
   runApp(MultiProvider(
     providers: [
       ChangeNotifierProvider(create: (context) => ThemeViewModel()),

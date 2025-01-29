@@ -1,4 +1,5 @@
 {
+  "@@locale": "es",
   "converter": "Conversor",
   "transactions": "Transacciones",
   "settings": "Configuración",
