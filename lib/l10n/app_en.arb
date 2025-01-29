@@ -2,5 +2,7 @@
   "converter": "Converter",
   "transactions": "Transactions",
   "settings": "Settings",
-  "menu": "Menu"
+  "menu": "Menu",
+  "darkMode": "Dark Mode",
+  "language": "Language"
 }
