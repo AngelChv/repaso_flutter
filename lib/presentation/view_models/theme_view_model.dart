@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+/// ViewModel que gestiona el estado del tema de la aplicación.
 class ThemeViewModel extends ChangeNotifier {
   ThemeViewModel() {
     SharedPreferences.getInstance().then((preferences) {

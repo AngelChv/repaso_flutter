@@ -5,6 +5,7 @@ import 'package:repaso_flutter/presentation/view_models/transactions_view_model.
 import 'package:repaso_flutter/presentation/widgets/transaction_card.dart';
 import '../widgets/app_drawer.dart';
 
+/// Pantalla que muestra las conversiones realizadas.
 class Transactions extends StatelessWidget {
   const Transactions({super.key});
 

@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:repaso_flutter/domain/conversion.dart';
 import 'package:repaso_flutter/presentation/view_models/transactions_view_model.dart';
 
+/// Tarjeta que muestra una conversion con su resultado.
 class TransactionCard extends StatelessWidget {
   const TransactionCard({super.key, required Conversion conversion})
       : _conversion = conversion;

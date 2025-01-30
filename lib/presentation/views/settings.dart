@@ -6,6 +6,7 @@ import 'package:repaso_flutter/presentation/view_models/language_view_model.dart
 import 'package:repaso_flutter/presentation/view_models/theme_view_model.dart';
 import '../widgets/app_drawer.dart';
 
+/// Pantalla de configuración de la aplicación.
 class Settings extends StatelessWidget {
   const Settings({super.key});
 

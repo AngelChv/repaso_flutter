@@ -6,12 +6,13 @@ import 'package:repaso_flutter/presentation/view_models/conversor_view_model.dar
 import 'package:repaso_flutter/presentation/view_models/transactions_view_model.dart';
 import 'package:repaso_flutter/presentation/widgets/app_drawer.dart';
 
+/// Pantalla que sirve para realizar conversiones de medidas de longitud.
 class Converter extends StatelessWidget {
   Converter({super.key});
 
   static const double _spacing = 16;
 
-  final menuEntries = Conversion.conversionRates.entries.map((entry) {
+  final _menuEntries = Conversion.conversionRates.entries.map((entry) {
     return DropdownMenuEntry(value: entry.key, label: entry.key);
   }).toList();
 
@@ -81,16 +82,16 @@ class Converter extends StatelessWidget {
             Center(
               child: DropdownMenu(
                 controller: _fromController,
-                initialSelection: menuEntries.first.label,
-                dropdownMenuEntries: menuEntries,
+                initialSelection: _menuEntries.first.label,
+                dropdownMenuEntries: _menuEntries,
               ),
             ),
             SizedBox(height: _spacing),
             Center(
               child: DropdownMenu(
                 controller: _toController,
-                initialSelection: menuEntries.first.label,
-                dropdownMenuEntries: menuEntries,
+                initialSelection: _menuEntries.first.label,
+                dropdownMenuEntries: _menuEntries,
               ),
             ),
             SizedBox(height: _spacing),

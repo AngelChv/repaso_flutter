@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+/// VieModel que gestiona el estado del tamaño del texto de la aplicación.
 class FontSizeViewModel extends ChangeNotifier {
   FontSizeViewModel() {
     SharedPreferences.getInstance().then((preferences) {

@@ -4,6 +4,7 @@ import 'package:repaso_flutter/presentation/views/converter.dart';
 import 'package:repaso_flutter/presentation/views/settings.dart';
 import 'package:repaso_flutter/presentation/views/transactions.dart';
 
+/// Menú de la aplicación
 class AppDrawer extends StatefulWidget {
   const AppDrawer({super.key});
 

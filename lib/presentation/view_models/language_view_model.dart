@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+/// ViewModel que gestiona el estado del idioma de la aplicación.
 class LanguageViewModel extends ChangeNotifier {
   LanguageViewModel() {
     SharedPreferences.getInstance().then((preferences) {

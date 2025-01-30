@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:repaso_flutter/data/conversion_service.dart';
 import 'package:repaso_flutter/domain/conversion.dart';
 
+/// VieModel que gestiona el estado de las transacciones.
+///
+/// Guarda una lista de las conversiones realizadas.
 class TransactionViewModel extends ChangeNotifier {
   List<Conversion> _conversions = [];
 
