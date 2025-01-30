@@ -12,5 +12,6 @@
   "insertANumber": "Introduzca un número",
   "transactionSavedSuccessfully": "Transacción guardada con éxito",
   "transactionSavingError": "Error de guardado de transacción",
-  "result": "Resultado"
+  "result": "Resultado",
+  "textSize": "Tamaño de letra"
 }

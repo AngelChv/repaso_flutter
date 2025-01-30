@@ -34,6 +34,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "menu": MessageLookupByLibrary.simpleMessage("Menu"),
     "result": MessageLookupByLibrary.simpleMessage("Result"),
     "settings": MessageLookupByLibrary.simpleMessage("Settings"),
+    "textSize": MessageLookupByLibrary.simpleMessage("Text size"),
     "transactionSavedSuccessfully": MessageLookupByLibrary.simpleMessage(
       "Transaction Saved Successfully",
     ),

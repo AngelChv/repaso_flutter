@@ -12,5 +12,6 @@
   "insertANumber": "Insert a number",
   "transactionSavedSuccessfully": "Transaction Saved Successfully",
   "transactionSavingError": "Transaction Saving Error",
-  "result": "Result"
+  "result": "Result",
+  "textSize": "Text size"
 }

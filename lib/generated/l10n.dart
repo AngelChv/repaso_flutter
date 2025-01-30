@@ -154,6 +154,11 @@ class S {
   String get result {
     return Intl.message('Result', name: 'result', desc: '', args: []);
   }
+
+  /// `Text size`
+  String get textSize {
+    return Intl.message('Text size', name: 'textSize', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
