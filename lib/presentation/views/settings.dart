@@ -19,6 +19,7 @@ class Settings extends StatelessWidget {
         title: Text(AppLocalizations.of(context)!.settings),
       ),
       body: ListView(
+        padding: EdgeInsets.all(16),
         children: [
           Card(
             child: ListTile(

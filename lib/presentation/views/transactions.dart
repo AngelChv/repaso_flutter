@@ -18,8 +18,11 @@ class Transactions extends StatelessWidget {
         title: Text(AppLocalizations.of(context)!.transactions),
       ),
       body: GridView.builder(
+        padding: EdgeInsets.all(16),
         itemCount: vm.conversions.length,
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+          mainAxisSpacing: 8,
+          crossAxisSpacing: 8,
           maxCrossAxisExtent: 600,
           mainAxisExtent: 100,
         ),
