@@ -89,6 +89,71 @@ class S {
   String get language {
     return Intl.message('Language', name: 'language', desc: '', args: []);
   }
+
+  /// `Insert the value`
+  String get insertTheValue {
+    return Intl.message(
+      'Insert the value',
+      name: 'insertTheValue',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Convert and save`
+  String get convertAndSave {
+    return Intl.message(
+      'Convert and save',
+      name: 'convertAndSave',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Complete the value`
+  String get completeTheValue {
+    return Intl.message(
+      'Complete the value',
+      name: 'completeTheValue',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insert a number`
+  String get insertANumber {
+    return Intl.message(
+      'Insert a number',
+      name: 'insertANumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Transaction Saved Successfully`
+  String get transactionSavedSuccessfully {
+    return Intl.message(
+      'Transaction Saved Successfully',
+      name: 'transactionSavedSuccessfully',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Transaction Saving Error`
+  String get transactionSavingError {
+    return Intl.message(
+      'Transaction Saving Error',
+      name: 'transactionSavingError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Result`
+  String get result {
+    return Intl.message('Result', name: 'result', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

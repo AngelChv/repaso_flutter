@@ -22,11 +22,30 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "completeTheValue": MessageLookupByLibrary.simpleMessage(
+      "Completa el valor",
+    ),
+    "convertAndSave": MessageLookupByLibrary.simpleMessage(
+      "Convertir y guardar",
+    ),
     "converter": MessageLookupByLibrary.simpleMessage("Conversor"),
     "darkMode": MessageLookupByLibrary.simpleMessage("Modo oscuro"),
+    "insertANumber": MessageLookupByLibrary.simpleMessage(
+      "Introduzca un número",
+    ),
+    "insertTheValue": MessageLookupByLibrary.simpleMessage(
+      "Introduzca el valor",
+    ),
     "language": MessageLookupByLibrary.simpleMessage("Lenguaje"),
     "menu": MessageLookupByLibrary.simpleMessage("Menú"),
+    "result": MessageLookupByLibrary.simpleMessage("Resultado"),
     "settings": MessageLookupByLibrary.simpleMessage("Configuración"),
+    "transactionSavedSuccessfully": MessageLookupByLibrary.simpleMessage(
+      "Transacción guardada con éxito",
+    ),
+    "transactionSavingError": MessageLookupByLibrary.simpleMessage(
+      "Error de guardado de transacción",
+    ),
     "transactions": MessageLookupByLibrary.simpleMessage("Transacciones"),
   };
 }

@@ -28,9 +28,9 @@ abstract class ConversionService {
     return conversions;
   }
 
-  static Future<bool> insert(Conversion conversion) async {
+  static Future<int> insert(Conversion conversion) async {
     final db = await SqliteManager.getConnection();
-    return await db.insert(_table, conversion.toMap()) > 0;
+    return await db.insert(_table, conversion.toMap());
   }
 
   static Future<bool> delete(int id) async {

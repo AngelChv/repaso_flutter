@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:repaso_flutter/presentation/view_models/conversor_view_model.dart';
 import 'package:repaso_flutter/presentation/view_models/language_view_model.dart';
 import 'package:repaso_flutter/presentation/view_models/theme_view_model.dart';
 import 'package:repaso_flutter/presentation/view_models/transactions_view_model.dart';
@@ -12,6 +13,7 @@ void main() {
       ChangeNotifierProvider(create: (context) => ThemeViewModel()),
       ChangeNotifierProvider(create: (context) => LanguageViewModel()),
       ChangeNotifierProvider(create: (context) => TransactionViewModel()),
+      ChangeNotifierProvider(create: (context) => ConversorViewModel()),
     ],
     child: const App(),
   ));
@@ -29,7 +31,7 @@ class App extends StatelessWidget {
       themeMode: context.watch<ThemeViewModel>().themeMode,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const Converter(),
+      home: Converter(),
     );
   }
 }

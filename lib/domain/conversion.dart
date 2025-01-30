@@ -1,12 +1,16 @@
 class Conversion {
-  static const conversionRates = {
+  static const _conversionRates = {
     'KM': {'KM': 1.0, 'M': 1000.0, 'MLL': 0.621371},
     'M': {'KM': 0.001, 'M': 1.0, 'MLL': 0.000621371},
     'MLL': {'KM': 1.60934, 'M': 1609.34, 'MLL': 1.0},
   };
+  static Map<String, Map<String, double>> get conversionRates => _conversionRates;
 
-  final int? _id;
+  int? _id;
   int? get id => _id;
+  set id(int? value) {
+    _id = value;
+  }
 
   late final String _operation;
 
@@ -21,7 +25,7 @@ class Conversion {
   factory Conversion.convert(double value, String from, String to) {
     return Conversion(
       "$value $from -> $to",
-      value * conversionRates[from]![to]!,
+      value * _conversionRates[from]![to]!,
       null
     );
   }

@@ -5,5 +5,12 @@
   "settings": "Settings",
   "menu": "Menu",
   "darkMode": "Dark Mode",
-  "language": "Language"
+  "language": "Language",
+  "insertTheValue": "Insert the value",
+  "convertAndSave": "Convert and save",
+  "completeTheValue": "Complete the value",
+  "insertANumber": "Insert a number",
+  "transactionSavedSuccessfully": "Transaction Saved Successfully",
+  "transactionSavingError": "Transaction Saving Error",
+  "result": "Result"
 }

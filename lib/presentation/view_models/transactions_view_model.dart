@@ -14,6 +14,16 @@ class TransactionViewModel extends ChangeNotifier {
     });
   }
 
+  Future<bool> insert(Conversion conversion) async {
+    final int id = await ConversionService.insert(conversion);
+    if (id > 0) {
+      conversion.id = id;
+      _conversions.add(conversion);
+      return true;
+    }
+    return false;
+  }
+
   Future<bool> delete(Conversion conversion) async {
     if (conversion.id != null &&
         await ConversionService.delete(conversion.id!)) {

@@ -6,7 +6,7 @@ main() {
   test("Insertar en la tabla conversions", () async {
     final bool result = await ConversionService.insert(
       Conversion.convert(10, 'KM', 'KM'),
-    );
+    ) > 0;
     expect(result, true);
   });
 

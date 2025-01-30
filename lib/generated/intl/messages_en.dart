@@ -22,11 +22,24 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "completeTheValue": MessageLookupByLibrary.simpleMessage(
+      "Complete the value",
+    ),
+    "convertAndSave": MessageLookupByLibrary.simpleMessage("Convert and save"),
     "converter": MessageLookupByLibrary.simpleMessage("Converter"),
     "darkMode": MessageLookupByLibrary.simpleMessage("Dark Mode"),
+    "insertANumber": MessageLookupByLibrary.simpleMessage("Insert a number"),
+    "insertTheValue": MessageLookupByLibrary.simpleMessage("Insert the value"),
     "language": MessageLookupByLibrary.simpleMessage("Language"),
     "menu": MessageLookupByLibrary.simpleMessage("Menu"),
+    "result": MessageLookupByLibrary.simpleMessage("Result"),
     "settings": MessageLookupByLibrary.simpleMessage("Settings"),
+    "transactionSavedSuccessfully": MessageLookupByLibrary.simpleMessage(
+      "Transaction Saved Successfully",
+    ),
+    "transactionSavingError": MessageLookupByLibrary.simpleMessage(
+      "Transaction Saving Error",
+    ),
     "transactions": MessageLookupByLibrary.simpleMessage("Transactions"),
   };
 }

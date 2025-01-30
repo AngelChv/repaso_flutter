@@ -5,6 +5,7 @@ class ThemeViewModel extends ChangeNotifier {
   ThemeViewModel() {
     SharedPreferences.getInstance().then((preferences) {
       _isDarkTheme = preferences.getBool("isDarkTheme") ?? _isDarkTheme;
+      notifyListeners();
     });
   }
   bool _isDarkTheme = false;

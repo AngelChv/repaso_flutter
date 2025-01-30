@@ -21,7 +21,10 @@ class _AppDrawerState extends State<AppDrawer> {
             decoration: const BoxDecoration(
               color: Colors.blue,
             ),
-            child: Text(AppLocalizations.of(context)!.menu),
+            child: Text(
+              AppLocalizations.of(context)!.menu,
+              style: TextStyle(color: Colors.white),
+            ),
           ),
           ListTile(
             leading: Icon(Icons.compare_arrows),

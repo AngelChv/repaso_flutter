@@ -5,6 +5,7 @@ class LanguageViewModel extends ChangeNotifier {
   LanguageViewModel() {
     SharedPreferences.getInstance().then((preferences) {
       _selectedLanguage = preferences.getString("language") ?? _selectedLanguage;
+      notifyListeners();
     });
   }
 
