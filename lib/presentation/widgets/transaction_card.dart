@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:repaso_flutter/domain/conversion.dart';
-import 'package:repaso_flutter/presentation/view_models/transactions_view_model.dart';
 
 /// Tarjeta que muestra una conversion con su resultado.
 class TransactionCard extends StatelessWidget {
-  const TransactionCard({super.key, required Conversion conversion})
-      : _conversion = conversion;
+  const TransactionCard(
+      {super.key,
+      required Conversion conversion,
+      required void Function(BuildContext context, Conversion conversion) onDeletePressed})
+      : _onDeletePressed = onDeletePressed, _conversion = conversion;
+
   final Conversion _conversion;
+
+  final void Function(BuildContext context, Conversion conversion) _onDeletePressed;
 
   @override
   Widget build(BuildContext context) {
@@ -16,19 +20,7 @@ class TransactionCard extends StatelessWidget {
         title: Text(_conversion.operation),
         subtitle: Text(_conversion.result.toString()),
         trailing: IconButton(
-          onPressed: () async {
-            final vm = context.read<TransactionViewModel>();
-            final isSuccess = await vm.delete(_conversion);
-            if (context.mounted) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(isSuccess
-                      ? "Transacción eliminada"
-                      : "Error al eliminar la transacción"),
-                ),
-              );
-            }
-          },
+          onPressed: () => _onDeletePressed(context, _conversion),
           icon: Icon(Icons.delete),
         ),
       ),
